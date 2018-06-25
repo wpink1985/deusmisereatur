@@ -1,1 +1,62 @@
-<!DOCTYPE html><html><head><title>Pink</title><link rel="shortcut icon" type="image/png" href="icon.png"/></head><body bgcolor="#F77E9D"></body></html>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!--
+    FlappySmith was developed anonymously as part of the 2nd Edition of Pink 2018 during early June - with booklet release taking place in the first few days of July.
+    Original game gravity mechanics from library - styling, content, music and gameplay by this developer ©2018
+    Trees in loving memory of the Yard tree :(
+
+    Compliance: site stores a single cookie for score keeping purposes. No user data stored (site is static not dynamic). Site is hidden from search engines through robots.txt
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quattrocento" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="main.min.js"></script>
+    <script>window.addEventListener('resize', game.resize, false);</script>
+
+    <title>FlappySmith</title>
+    <meta property="og:image:width" content="1061">
+    <meta property="og:image:height" content="1592">
+    <meta property="og:title" content="FlappySmith">
+    <meta property="og:description" content="Get Deneal to Warwick &amp; help get Patrick his OBE!">
+    <meta property="og:url" content="https://deusmisereatur.org.uk">
+    <meta property="og:image" content="https://www.deusmisereatur.org.uk//icons/fb/og-image.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?v=WGLl8J3b9m">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?v=WGLl8J3b9m">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?v=WGLl8J3b9m">
+    <link rel="manifest" href="/icons/site.webmanifest?v=WGLl8J3b9m">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg?v=WGLl8J3b9m" color="#f77e9d">
+    <link rel="shortcut icon" href="/icons/favicon.ico?v=WGLl8J3b9m">
+    <meta name="apple-mobile-web-app-title" content="FlappySmith">
+    <meta name="application-name" content="FlappySmith">
+    <meta name="msapplication-TileColor" content="#f77e9d">
+    <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png?v=WGLl8J3b9m">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml?v=WGLl8J3b9m">
+    <meta name="theme-color" content="#f77e9d">
+</head>
+<body>
+<div id="container">
+    <h1>DEUS MISEREATUR</h1>
+    <h2>WESTMINSTER FROM WITHIN 2017-2018</h2>
+    <h3>A celebration of Westminster School in an<br/>exciting mini-game by the Pink team</h3>
+    <center>
+        <a href="#" data-player="0" onclick="gameStart(0)">SEND DENEAL OFF TO WARWICK</a><br/>
+        <a href="#" data-player="1" onclick="gameStart(1)">GET DERHAM TO THE PALACE FOR HIS OBE</a><br/>
+        <a href="#" data-player="2" onclick="gameStart(2)">GET THE DEAN OFF TO THE BEACH FOR RETIREMENT </a><br/>
+        <a href="http://www.adtelevavi.org.uk" style="margin-top: 15px;" target="_blank">PRE-ORDER A RANDOM BOOK OF PICTURES  -  £45</a><br/>
+        <a href="pink2018-2.pdf" target="_blank" style="border-color:  #ffffff;">DOWNLOAD PINK 2018</a>
+    </center>
+</div>
+<div id="winContainer">
+    <h1 style="margin: 0px;">You Won!</h1>
+    <h2 id="winText" style="margin-bottom: 2px; margin-top: 3px;"></h2>
+    <img alt="Error" id="winImage" src="cheat.png" />
+    <h3  style="margin: 0px; display: none;">Score: <span id="score"></span></h3>
+</div>
+<canvas id="game"></canvas>
+<!-- DRS9Ztvgddka2fssZJKHircT4cgeVx1VD3fgfaBJYFRY97Bxqk1nrGbKrM4278FOPIEiY4InSxyabQcAjXxBPH9DU03bZtBvn2tQ -->
+</body>
+</html>
